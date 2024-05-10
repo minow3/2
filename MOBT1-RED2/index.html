@@ -1,0 +1,538 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="../assets/css/style.css">
+    <link rel="stylesheet" href="../assets/css/navbar.css">
+
+    <link rel="apple-touch-icon" sizes="180x180" href="../assets/images/favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="../assets/images/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="../assets/images/favicon/favicon-16x16.png">
+    <link rel="manifest" href="../assets/images/favicon/site.webmanifest">
+
+
+    <title>MOBT1-RED2</title>
+</head>
+<body>
+<!-- ##### Centered Page ##### -->
+<div class="center">
+<!-- ##### Navigation ##### -->
+        <div class="topnav" id="myTopnav">
+            <a href="../index.html" class="active">RED 2</a>
+            
+            <div class="dropdown">
+                <button class="dropbtn">BMI</button>
+                <div class="dropdown-content">
+                    <a href="../bmi.html">BMI Calculator</a>
+                </div>
+            </div>
+            <div class="dropdown">
+                <button class="dropbtn">SOFTARCH
+                </button>
+                <div class="dropdown-content">
+                    <a href="../SOFTARC1-RED2/index.html">Skills Demo 1: Modern methodology</a>
+                    <a href="../SOFTARC2-RED2/index.html">Skills Demo 2: Pair Programming</a>
+                    <a href="../SOFTARC3-RED2/index.html">Skills Demo 3: Apply skills</a>
+                    <a href="../SOFTARC4-RED2/index.html">Skills Demo 4: Java from UML</a>
+                    <a href="../SOFTARC5-RED2/index.html">Skills Demo 5: Use case diagram</a>
+                    <a href="../SOFTARC6-RED2/index.html">Skills Demo 6: Use-case review</a>
+                    <a href="../SOFTARC7-RED2/index.html">Skills Demo 7: What is Waterfall</a>
+                </div>
+            </div>
+            <div class="dropdown">
+                <button class="dropbtn">MOBT
+                </button>
+                <div class="dropdown-content">
+                    <a href="../MOBT1-RED2/index.html">MOBT-SKILLS1-Prototype App</a>
+                    <a href="../MOBT2-RED2/index.html">MOBT-SKILLS2-Android Native Application</a>
+                    <a href="../MOBT3-RED2/index.html">MOBT-SKILLS3-Mobile Network & Device</a>
+                </div>
+            </div>
+            <div class="dropdown">
+                <button class="dropbtn">WORKEXP
+                </button>
+                <div class="dropdown-content">
+                    <a href="../WXP-DIARY-r2/index.html">Work Placement (aka Diary)</a>
+                </div>
+            </div>
+            <div class="dropdown">
+                <button class="dropbtn">TEST
+                </button>
+                <div class="dropdown-content">
+                    <a href="http://validator.w3.org/check?uri=https://t.fachtnaroe.net/red/2/MOBT1-RED2/index.html" rel="nofollow"
+                    target="_blank">VALIDATE THIS PAGE HTML</a>
+                    <a href="https://jigsaw.w3.org/css-validator/check?uri=https://t.fachtnaroe.net/red/2" rel="nofollow"
+                    target="_blank">VALIDATE WEBSITE CSS</a>
+                </div>
+            </div>
+            <a href="javascript:void(0);" class="icon" onclick="myFunction()">&#9776;</a>
+        </div>
+<!-- ##### Main COntent ##### -->
+
+        <div class="title">
+            <h2>Prototype App</h2>
+        </div>
+
+        <br>
+        <hr>
+        <br>
+
+        <div class="section">
+            <div class="text">
+                <h3>1 screen design sketch</h3>
+                <p>Inital design for bmi calculator</p>
+            </div>
+            <div class="picture">
+                <p>Click to view</p>
+                <a target="_blank" href="images/MOBT1-wireframe-bmi.png">
+                    <img src="images/MOBT1-wireframe-bmi.png" alt="">
+                </a>
+                
+            </div>   
+        </div>
+
+        <br>
+        <hr>
+        <br>
+
+        <div class="section">
+            <div class="text">
+                <h3>A screen shot of final design</h3>
+                <p>The final design remained similar to the initial design, with only modifications made to the color schemes to align with the primary color scheme of the website.</p>
+            </div>
+            <div class="picture">
+                <p>Click to view</p>
+                <a target="_blank" href="images/MOBT1-bmi-actual-look.png">
+                    <img src="images/MOBT1-bmi-actual-look.png" alt="">
+                </a>
+                
+            </div>   
+        </div>
+
+        <br>
+        <hr>
+        <br>
+
+        <div class="section">
+            <div class="text">
+                <h3>A UX work-flow diagram</h3>
+                <p>User can choose enter values or use slides to provide weight and height, then select button to calculate BMI.</p>
+            </div>
+            <div class="picture">
+                <p>Click to view</p>
+                <a target="_blank" href="images/MOBT1-ux-diagram.png">
+                    <img src="images/MOBT1-ux-diagram.png" alt="">
+                </a>
+                
+            </div>   
+        </div>
+
+        <br>
+        <hr>
+        <br>
+
+        <div class="section">
+            <div class="text">
+                <h3>UML use-case diagram</h3>
+                <p>UML picture generated from this code:</p>
+                <p>
+                    <pre>
+                        <code>
+            @startuml
+            class input {
+            weight: value
+            height: value
+            }
+            class calculateBMI {
+            (wheight)/(height*height)
+            }
+            input --> calculateBMI
+            class calculateBMI
+            calculateBMI --> messageOutput
+            class messageOutput {
+            result BMI
+            }
+            @enduml
+                        </code>
+                    </pre>
+                </p>
+            </div>
+            <div class="picture">
+                <p>Click to view</p>
+                <a target="_blank" href="images/MOBT1-umlusecase.png">
+                    <img src="images/MOBT1-umlusecase.png" alt="">
+                </a>
+                
+            </div>   
+        </div>
+
+        <br>
+        <hr>
+        <br>
+
+        <div class="section">
+            <div class="text">
+                <h3>Java code from MainActivity.java</h3>
+                <p>
+                    <pre>
+                        <code>
+public class StartingFile extends Form implements HandlesEventDispatching {
+
+    private
+    
+    VerticalArrangement mainArrangement;
+    WebViewer buzz;
+
+    Button rf;
+    
+    protected void $define() {
+
+        this.Sizing("Responsive");
+        mainArrangement=new VerticalArrangement(this);
+        mainArrangement.WidthPercent(100);
+        mainArrangement.Height(LENGTH_FILL_PARENT);
+
+        rf = new Button(mainArrangement);
+        rf.Width(LENGTH_FILL_PARENT);
+        rf.HeightPercent(5);
+        rf.Text("Refresh");
+
+        buzz = new WebViewer(mainArrangement);
+        buzz.HomeUrl("https://t.fachtnaroe.net/red/2/bmi.html");
+        buzz.GoHome();
+        
+        EventDispatcher.registerEventForDelegation(this, formName, "Click");
+        
+    }
+
+    public boolean dispatchEvent(Component component, String componentName, String eventName, Object[] params) {
+
+        System.err.print("dispatchEvent: " + formName + " [" + component.toString() + "] [" + componentName + "] " + eventName);
+        if (eventName.equals("Click")) {
+            buzz.GoHome();
+            return true;
+            
+        }
+        // true means event has been handled by us (ie recognised)
+        return false;
+    }
+
+}
+                        </code>
+                    </pre>
+                </p>
+            </div>  
+        </div>
+
+        <br>
+        <hr>
+        <br>
+        
+        <div class="section">
+            <div class="text">
+                <h3>HTML from online bmi calculator</h3>
+                <p>
+                    <pre>
+                        <code id="text-code">
+&lt;form name="bmiForm"&gt;
+    &lt;div class="bmi-calculator"&gt;
+        &lt;h3&gt;Calculate your BMI&lt;/h3&gt;
+        &lt;div class="bmi-calculator-weight"&gt;
+            &lt;input class="weight-slider" name="realweight" id="myWeight" type="range" min="25" max="180" value="60"/&gt;
+            &lt;p&gt;
+                WEIGHT:
+                &lt;input name="weight" id="inputWeight" type="number" value="60" min="25" max="180" oninput="showValWeight(this.value)" /&gt;
+                &lt;span id="weight"&gt;&lt;/spa&gt; kg
+            &lt;/p&gt;
+        &lt;/div&gt;
+        &lt;div class="bmi-calculator-height"&gt;
+            &lt;input class="height-slider" name="realheight" id="myHeight" type="range" min="100" max="220" value="160"&gt;
+            &lt;p&gt;
+                HEIGHT:
+                &lt;input name="height" id="inputHeight" type="number" value="160" min="100" max="220" oninput="showValHeight(this.value)" /&gt;
+                &lt;span id="height"&gt;&lt;/span&gt; cm
+            &lt;/p&gt;
+        &lt;/div&gt;
+        &lt;input class="gumb" type="button" value="Calculate" onclick="calculateBmi()" style="margin-top: 0.5em"&gt;
+        &lt;div class="msgOutput"&gt;
+            &lt;strong&gt;Your BMI:&lt;/strong&gt;
+            &lt;span id="yourbmi"&gt;&lt;/span&gt;
+            &lt;span id="evaluationMessage"&gt;&lt;/span&gt;
+        &lt;/div&gt;
+    &lt;/div&gt;
+&lt;/form&gt;
+                        </code>
+                    </pre>
+                </p>
+            </div>
+              
+        </div>
+
+        <br>
+        <hr>
+        <br>
+
+        <div class="section">
+            <div class="text">
+                <h3>CSS from online bmi calculator</h3>
+                <p>
+                    <pre>
+                        <code id="text-code">
+.bmi-calculator {
+    border: 2px solid #b22222;
+    border-radius: 15px;
+    box-shadow: rgba(17, 12, 46, 0.15) 0px 48px 100px 0px;
+    background-color: #a7c957;
+    margin-right: 10px;
+    margin-bottom: 20px;
+    text-align: center;
+}
+    
+.bmi-calculator-weight, .bmi-calculator-height {
+    width: 100%;
+}
+    
+.weight-slider, .height-slider {
+    width: 90%;
+    height: 12px;
+    border-radius: 10px;
+    background: #b22222;
+}
+    
+input[type=range] {
+    -moz-appearance: none;
+    -webkit-appearance: none;
+    appearance: none;
+    cursor: pointer;
+}
+    
+input[type=range]:focus {
+    outline: none;
+}
+
+input[type=range]::-ms-track {
+    width: 100%;
+    cursor: pointer;
+}
+    
+input[type=range]::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    border: 2.5px solid var(--vigo-color);
+    height: 20px;
+    width: 20px;
+    border-radius: 40px;
+    background: white;
+    cursor: pointer;
+    margin-top: 0px;
+}
+    
+input[type=range]::-moz-range-thumb {
+    border: 2.5px solid var(--vigo-color);
+    height: 20px;
+    width: 20px;
+    border-radius: 40px;
+    background: white;
+    cursor: pointer;
+}
+    
+input[type=range]::-ms-thumb {
+    border: 2.5px solid var(--vigo-color);
+    height: 20px;
+    width: 20px;
+    border-radius: 40px;
+    background: white;
+    cursor: pointer;
+}
+    
+input[type=number] {
+    cursor: pointer;
+    background: var(--input-number-color);
+    border-style: none;
+    height: 30px;
+    width: 60px;
+    margin-left: 20px;
+    margin-right: 10px;
+    text-align: right;
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.5em;
+}
+    
+input[type=number]:focus {
+    outline: none;
+}
+    
+.gumb {
+    text-align: center;
+    font-size: 1em;
+    color: white;
+    width: 90%;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    padding: 11px 32px;
+    transition: .2s;
+    border: none;
+    background-color: #b22222;
+    text-transform: uppercase;
+    cursor: pointer;
+}
+
+.gumb:hover{
+    opacity: .8;
+}
+
+.msgOutput {
+    width: 90%;
+    padding-left: 20px;
+    padding-right: 10px;
+
+}
+
+#evaluationMessage ul {
+    list-style-type: none;
+    text-align: left;
+    font-size: 14px;
+}
+                        </code>
+                    </pre>
+                </p>
+            </div>
+               
+        </div>
+
+        <br>
+        <hr>
+        <br>
+
+        <div class="section">
+            <div class="text">
+                <h3>Java Script from online bmi calculator</h3>
+                <p>
+                    <pre>
+                        <code id="text-code">
+let weightSlider = document.getElementById("myWeight");
+let weightOutput = document.getElementById("inputWeight");
+
+let heightSlider = document.getElementById("myHeight");
+let heightOutput = document.getElementById("inputHeight");
+
+weightOutput.innerHTML = weightSlider.value;
+heightOutput.innerHTML = heightSlider.value;
+
+weightSlider.oninput = function () {
+    weightOutput.innerHTML = this.value;
+}
+
+heightSlider.oninput = function () {
+    heightOutput.innerHTML = this.value;
+}
+
+function showValWeight(newVal) {
+    weightSlider.value=newVal;
+};
+
+function showValHeight(newVal) {
+    heightSlider.value=newVal;
+};
+
+weightSlider.addEventListener("input", updateValueWeight);
+heightSlider.addEventListener("input", updateValueHeight);
+
+function updateValueWeight(e) {
+    weightOutput.value = e.srcElement.value;
+}
+
+function updateValueHeight(e) {
+    heightOutput.value = e.srcElement.value;
+}
+
+function calculateBmi() {
+    let weight = document.bmiForm.realweight.value;
+    let height = (document.bmiForm.realheight.value)/100;
+
+    let realbmi = (weight)/Math.pow(height, 2);
+
+    let realbmiOutput = document.getElementById("yourbmi");
+    let messageOutput = document.getElementById("evaluationMessage");
+
+    let roundedBmi = realbmi.toFixed(1);
+    messageOutput.innerHTML = "";
+    realbmiOutput.innerHTML = " " + roundedBmi;
+    if (roundedBmi <= 18.5) {
+        messageOutput.innerHTML = "Underweight"
+    }
+    else if (roundedBmi > 18.5 && roundedBmi <= 24.9 ) {
+        messageOutput.innerHTML = "Healthy"
+    }
+    else if (roundedBmi >= 25.0 && roundedBmi <= 29.9) {
+        messageOutput.innerHTML = "Overweight"
+    }
+    else if (roundedBmi >= 30.0) {
+        messageOutput.innerHTML = "Obese"
+    }
+    
+}
+                        </code>
+                    </pre>
+                </p>
+            </div>
+              
+        </div>
+
+        <br>
+        <hr>
+        <br>
+
+        <div class="section">
+            <div class="text">
+                <h3>TESTING</h3>
+                <p>Comparing values with other calculator existing online</p>
+            </div>
+            <div class="picture">
+                <p>Click to view</p>
+                <a target="_blank" href="images/MOBT1-underweight.png">
+                    <img src="images/MOBT1-underweight.png" alt="">
+                </a>
+                <p>Click to view</p>
+                <a target="_blank" href="images/MOBT1-healthy.png">
+                    <img src="images/MOBT1-healthy.png" alt="">
+                </a>
+                <p>Click to view</p>
+                <a target="_blank" href="images/MOBT1-overweight.png">
+                    <img src="images/MOBT1-overweight.png" alt="">
+                </a>
+                <p>Click to view</p>
+                <a target="_blank" href="images/MOBT1-obese.png">
+                    <img src="images/MOBT1-obese.png" alt="">
+                </a>
+                
+                
+                
+                
+            </div>   
+        </div>
+
+        <br>
+        <hr>
+        <br>
+        
+
+        <object style="width:100%;" data="pdf/MOBT-SKILLS1-2024-Prototype-App.pdf" type="application/pdf" height="800">
+            <a href="pdf/MOBT-SKILLS1-2024-Prototype-App.pdf">Download</a>
+        </object>
+
+        <br>
+        <br>
+        <br>
+
+<!-- ##### Footer ##### -->
+        <footer>
+            <h4>RED 2 @ 2024</h4>
+        </footer>
+
+
+    </div>
+    <script src="../assets/js/navbar.js"></script>
+</body>
+</html>

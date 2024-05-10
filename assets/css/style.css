@@ -1,0 +1,186 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    background-color: #a7c957;
+}
+
+.center {
+    max-width: 1080px;
+    margin: auto;
+    background-color: #f2e8cf;
+    box-shadow: rgba(0, 0, 0, 0.75) 5px 25px 50px;
+    
+}
+
+footer {
+    max-width: 1080px;
+    margin:auto;
+    border-top: 5px solid #E5C454;
+    border-top-color: #E5C454;
+    position:fixed;
+    bottom: 0;
+    width:100%;
+    background-color: #b22222;
+    color: white;
+    
+}
+
+footer h4 {
+    padding: 15px;
+}
+
+/* content */
+
+.title {
+    padding-top: 80px;
+    padding-left:25px;
+    padding-bottom: 10px;
+}
+
+.section {
+    padding: 25px;
+    display:flex;
+}
+
+.text{
+    width: 50%;
+    line-height: 2;
+}
+
+.text ul {
+    list-style-type: none;
+    padding-left: 25px;
+    padding-right: 20px;
+}
+
+.picture{
+    width:40%;
+    float:right;
+    object-fit: cover;
+    object-position: center;
+}
+
+.picture img {
+    width: 100%;
+    border: 2px solid #a7c957;
+    border-radius: 15px;
+    margin-bottom: 10px;
+}
+
+.section h3 {
+    padding: 15px;
+}
+
+.section p {
+    padding: 10px;
+}
+
+#text-code {
+    white-space: pre-wrap;
+    word-wrap: break-word;
+    text-align: justify;
+}
+
+.header img {
+    width:100%;
+    height:300px;
+}
+
+.report {
+    width: 80%;
+    margin: auto;
+    padding: 25px;
+}
+
+.report p {
+    padding: 25px;
+    line-height: 1.5;
+}
+
+/* Index page cards */
+
+.main-cards {
+    padding-top: 10px;
+    padding-bottom: 150px;
+    display:flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.card {
+    color: #423C3A;
+    justify-content: space-between;
+    width: 30%;
+    padding: 5px;
+    margin: 10px;
+    border: 1px solid #423C3A;
+    background-color: rgb(167, 201, 87, 0.8);
+}
+.card:hover{
+    background-color: rgb(178, 34, 34, 0.8);
+    border: 1px solid #423C3A;
+    color: #f2e8cf;
+}
+.card:hover {
+    cursor: pointer;
+    animation: shake 0.3s;
+}
+
+@keyframes shake {
+    0% { transform: rotate(0deg); }
+    25% { transform: rotate(5deg); }
+    50% { transform: rotate(0deg); }
+    75% { transform: rotate(-5deg); }
+    100% { transform: rotate(0deg); }
+}
+
+.card:active {
+    cursor: pointer;
+}
+
+
+.card-botom {
+    text-align: right;
+}
+.card h4 {
+    padding-left: 10px;
+    padding-top: 15px;
+    padding-bottom: 5px;
+}
+
+.card h5 {
+    padding-left: 10px;
+    padding-top: 10px;
+    padding-bottom: 5px;
+}
+
+.card a {
+    background-color: #b22222;
+    padding: 10px;
+    border: 1px solid #423C3A;
+
+}
+
+@media screen and (max-width: 800px) {
+
+    .section {
+        display: grid;
+    }
+    .text {
+        width:100%;
+    }
+    .picture {
+        width:100%;
+        float: none;
+    }
+    .card {
+        width: 80%;
+    }
+ 
+    
+  }

@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/navbar.css">
+    <link rel="stylesheet" href="assets/css/bmi.css">
+
+    <link rel="apple-touch-icon" sizes="180x180" href="assets/images/favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="assets/images/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="assets/images/favicon/favicon-16x16.png">
+    <link rel="manifest" href="assets/images/favicon/site.webmanifest">
+
+
+    <title>BMI</title>
+</head>
+<body>
+<!-- ##### Centered Page ##### -->
+    <div class="center">
+<!-- ##### Navigation ##### -->
+        <div class="topnav" id="myTopnav">
+            <a href="index.html" class="active">RED 2</a>
+            
+            <div class="dropdown">
+                <button class="dropbtn">BMI</button>
+                <div class="dropdown-content">
+                    <a href="bmi.html">BMI Calculator</a>
+                </div>
+            </div>
+            <div class="dropdown">
+                <button class="dropbtn">SOFTARCH
+                </button>
+                <div class="dropdown-content">
+                    <a href="SOFTARC1-RED2/index.html">Skills Demo 1: Modern methodology</a>
+                    <a href="SOFTARC2-RED2/index.html">Skills Demo 2: Pair Programming</a>
+                    <a href="SOFTARC3-RED2/index.html">Skills Demo 3: Apply skills</a>
+                    <a href="SOFTARC4-RED2/index.html">Skills Demo 4: Java from UML</a>
+                    <a href="SOFTARC5-RED2/index.html">Skills Demo 5: Use case diagram</a>
+                    <a href="SOFTARC6-RED2/index.html">Skills Demo 6: Use-case review</a>
+                    <a href="SOFTARC7-RED2/index.html">Skills Demo 7: What is Waterfall</a>
+                </div>
+            </div>
+            <div class="dropdown">
+                <button class="dropbtn">MOBT
+                </button>
+                <div class="dropdown-content">
+                    <a href="MOBT1-RED2/index.html">MOBT-SKILLS1-Prototype App</a>
+                    <a href="MOBT2-RED2/index.html">MOBT-SKILLS2-Android Native Application</a>
+                    <a href="MOBT3-RED2/index.html">MOBT-SKILLS3-Mobile Network & Device</a>
+                </div>
+            </div>
+            <div class="dropdown">
+                <button class="dropbtn">WORKEXP
+                </button>
+                <div class="dropdown-content">
+                    <a href="WXP-DIARY-r2/index.html">Work Placement (aka Diary)</a>
+                </div>
+            </div>
+            <div class="dropdown">
+                <button class="dropbtn">TEST
+                </button>
+                <div class="dropdown-content">
+                    <a href="http://validator.w3.org/check?uri=https://t.fachtnaroe.net/red/2/bmi.html" rel="nofollow"
+                    target="_blank">VALIDATE THIS PAGE HTML</a>
+                    <a href="https://jigsaw.w3.org/css-validator/check?uri=https://t.fachtnaroe.net/red/2" rel="nofollow"
+                    target="_blank">VALIDATE WEBSITE CSS</a>
+                </div>
+            </div>
+            <a href="javascript:void(0);" class="icon" onclick="myFunction()">&#9776;</a>
+        </div>
+<!-- ##### Main COntent ##### -->
+        <div class="title">
+            <h2>BMI Calculator</h2>
+        </div>
+
+        <br>
+        <hr>
+        <br>
+
+        <div class="section">
+            <div class="text">
+                <form name="bmiForm">
+                    <div class="bmi-calculator">
+                        <h3>Calculate your BMI</h3>
+                        <div class="bmi-calculator-weight">
+                            <input class="weight-slider" name="realweight" id="myWeight" type="range" min="25" max="180" value="60"/>
+                            <p>
+                                WEIGHT:
+                                <input name="weight" id="inputWeight" type="number" value="60" min="25" max="180" oninput="showValWeight(this.value)" />
+                                <span id="weight"></spa> kg
+                            </p>
+                        </div>
+                        <div class="bmi-calculator-height">
+                            <input class="height-slider" name="realheight" id="myHeight" type="range" min="100" max="220" value="160">
+                            <p>
+                                HEIGHT:
+                                <input name="height" id="inputHeight" type="number" value="160" min="100" max="220" oninput="showValHeight(this.value)" />
+                                <span id="height"></span> cm
+                            </p>
+                        </div>
+                        <input class="gumb" type="button" value="Calculate" onclick="calculateBmi()" style="margin-top: 0.5em">
+                        <div class="msgOutput">
+                            <strong>Your BMI:</strong>
+                            <span id="yourbmi"></span>
+                            <span id="evaluationMessage"></span>
+                        </div>
+                    </div>
+                </form>               
+            </div>
+            <div class="picture">
+                <img src="assets/images/bmi.webp" alt="">
+            </div>
+        </div>
+
+        <br>
+        <hr>
+        <br>
+
+        <div class="section">
+            <div class="text">
+                <h3>BMI stands for Body Mass Index.</h3>
+                <p>It is a measure that calculates the ratio of a person's weight to their height.
+                    It's commonly used as a screening tool to categorize individuals into different weight categories, such as underweight, normal weight, overweight, and obese.
+                </p>
+                <br>
+                <p>The formula to calculate BMI is:</p>
+                <p>BMI = weight (kg) / (height (m))^2</p>
+                <p>Or, if you prefer to use pounds and inches:</p>
+                <p>BMI = (weight (lbs) / (height (in))^2) x 703</p>
+                <br>
+                <p>Here's how the categories are typically interpreted:</p>
+                <br>
+                <p>Underweight: BMI less than 18.5</p>
+                <p>Normal weight: BMI between 18.5 and 24.9</p>
+                <p>Overweight: BMI between 25 and 29.9</p>
+                <p>Obese: BMI 30 or greater</p>
+                <br>
+                <p>However, it's essential to note that BMI is a rough estimate and does not take into account factors like muscle mass,
+                    bone density, overall body composition, and distribution of fat,
+                    which are essential for a comprehensive assessment of an individual's health.
+                    Therefore, while BMI can provide a general indication of weight status,
+                    it should not be the sole determinant of an individual's health or fitness level.
+                </p>
+            </div>  
+        </div>
+
+        <br>
+        <br>
+        <br>
+
+<!-- ##### Footer ##### -->
+        <footer>
+            <h4>RED 2 @ 2024</h4>
+        </footer>
+    </div>
+    <script src="assets/js/navbar.js"></script>
+    <script src="assets/js/bmi.js"></script>
+    
+</body>
+</html>

@@ -1,0 +1,114 @@
+.bmi-calculator {
+    border: 2px solid #b22222;
+    border-radius: 15px;
+    box-shadow: rgba(17, 12, 46, 0.15) 0px 48px 100px 0px;
+    background-color: #a7c957;
+    margin-right: 10px;
+    margin-bottom: 20px;
+    text-align: center;
+}
+  
+.bmi-calculator-weight, .bmi-calculator-height {
+    width: 100%;
+}
+  
+.weight-slider, .height-slider {
+    width: 90%;
+    height: 12px;
+    border-radius: 10px;
+    background: #b22222;
+}
+  
+input[type=range] {
+    -moz-appearance: none;
+    -webkit-appearance: none;
+    appearance: none;
+    cursor: pointer;
+}
+  
+input[type=range]:focus {
+    outline: none;
+}
+
+input[type=range]::-ms-track {
+    width: 100%;
+    cursor: pointer;
+}
+  
+input[type=range]::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    border: 2.5px solid var(--vigo-color);
+    height: 20px;
+    width: 20px;
+    border-radius: 40px;
+    background: white;
+    cursor: pointer;
+    margin-top: 0px;
+}
+  
+input[type=range]::-moz-range-thumb {
+    border: 2.5px solid var(--vigo-color);
+    height: 20px;
+    width: 20px;
+    border-radius: 40px;
+    background: white;
+    cursor: pointer;
+}
+  
+input[type=range]::-ms-thumb {
+    border: 2.5px solid var(--vigo-color);
+    height: 20px;
+    width: 20px;
+    border-radius: 40px;
+    background: white;
+    cursor: pointer;
+}
+  
+input[type=number] {
+    cursor: pointer;
+    background: var(--input-number-color);
+    border-style: none;
+    height: 30px;
+    width: 60px;
+    margin-left: 20px;
+    margin-right: 10px;
+    text-align: right;
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.5em;
+}
+  
+input[type=number]:focus {
+    outline: none;
+}
+  
+.gumb {
+    text-align: center;
+    font-size: 1em;
+    color: white;
+    width: 90%;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    padding: 11px 32px;
+    transition: .2s;
+    border: none;
+    background-color: #b22222;
+    text-transform: uppercase;
+    cursor: pointer;
+}
+
+.gumb:hover{
+    opacity: .8;
+}
+
+.msgOutput {
+    width: 90%;
+    padding-left: 20px;
+    padding-right: 10px;
+
+}
+
+#evaluationMessage ul {
+    list-style-type: none;
+    text-align: left;
+    font-size: 14px;
+}
